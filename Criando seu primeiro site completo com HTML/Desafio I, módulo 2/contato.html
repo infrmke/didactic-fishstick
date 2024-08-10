@@ -21,7 +21,7 @@
 
             background-color: #197BBD;
             width: 15%;
-            height: 1060px;
+            height: 1070px;
             padding: 10px 20px 0px;
         }
 
@@ -31,6 +31,10 @@
 
         div.menu li {
             font-size: 18px;
+        }
+
+        div.menu a{
+            color: white;
         }
 
         .content {
@@ -77,6 +81,11 @@
         div.footer {
             color: #929292;
             font-size: 14px;
+        }
+
+        div.footer a{
+            color: #929292;
+            text-decoration: none;
         }
 
         div.footer_dados {
@@ -143,21 +152,21 @@
                     <form action="" method="GET" onsubmit="alert('Agradecemos seu contato! Responderemos em breve.')">
                         <fieldset>
                             <legend>Dados pessoais</legend>
-                            <label for="fNome" required>Nome:</label>
-                            <input type="text" name="conato_nome" id="fNome">
+                            <label for="fNome">Nome:</label>
+                            <input type="text" name="conato_nome" id="fNome" required>
 
                             <br><br>
 
-                            <label for="fEmail" required>E-mail:</label>
-                            <input type="email" name="contato_email" id="fEmail">
+                            <label for="fEmail">E-mail:</label>
+                            <input type="email" name="contato_email" id="fEmail" required>
                         </fieldset>
 
                         <br>
 
                         <fieldset>
                             <legend>Mensagem</legend>
-                            <label for="fAssunto" required>Assunto:</label>
-                            <select name="contato_assunto" id="fAssunto">
+                            <label for="fAssunto">Assunto:</label>
+                            <select name="contato_assunto" id="fAssunto" required>
                                 <option value="fDuvida">Dúvida</option>
                                 <option value="fReclamacao">Reclamação</option>
                                 <option value="fAgendamento">Agendamento</option>
