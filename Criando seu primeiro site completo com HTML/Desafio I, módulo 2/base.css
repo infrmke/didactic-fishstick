@@ -1,0 +1,50 @@
+html, body {
+    margin: 0;
+}
+
+body {
+    /* display: flex;
+    justify-content: space-around; */
+    background-color: #f1f1f1;
+    font-size: 16.5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+    /* width: 1200px; */
+    /* margin: 0 auto; */
+    /* background-color: aquamarine; */
+
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: #ccc;
+}
+
+.main {
+    display: flex;
+    flex-flow: column;
+    width: 85%;
+}
+
+/* .menu {
+    personalizado individualmente em cada .html
+} */
+
+.header {
+    /* background-color: rgb(5, 108, 108); */
+
+    background-color: #2CA58D;
+    min-height: 200px;
+}
+
+/* .content {
+    personalizado individualmente em cada .html
+} */
+
+.footer {
+    /* background-color: rgb(99, 56, 240); */
+    
+    background-color: #1B1E22;
+    min-height: 180px;
+}

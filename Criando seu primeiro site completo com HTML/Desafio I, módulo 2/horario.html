@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIO.me | Criando seu primeiro site completo: Desafio I</title>
+
+    <link rel="stylesheet" href="base.css">
+    <style>
+        div.header {
+            background-image: url(img/heart-shape-stethoscope-blue-background_freepik.jpg);
+            background-repeat: no-repeat;
+            background-size: 1300px;
+            background-position: 50% 60%;
+        }
+
+        .menu {
+            background-color: #197BBD;
+            width: 15%;
+            height: 1060px;
+            padding: 10px 20px 0px;
+        }
+
+        div.menu{
+            color: white;
+        }
+
+        div.menu li{
+            font-size: 18px;
+        }
+        
+        .content {
+            background-color: white;
+            min-height: 650px;
+            padding: 20px;
+        }
+
+        table,
+        th,
+        td {
+            border-collapse: collapse;
+        }
+
+        table {
+            width: 100%;
+            border-spacing: 0;
+        }
+
+        thead tr th {
+            height: 50px;
+            color: white;
+            background-color: #197BBD;
+            text-align: center;
+        }
+
+        tbody tr td {
+            width: 10%;
+            height: 30px;
+            text-align: left;
+        }
+
+        tfoot tr td{
+            height: 40px;
+            color: white;
+            background-color: #2CA58D;
+        }
+
+        tr:nth-child(even) {
+            color: white;
+            background-color: #197BBD;
+        }
+
+        div.footer{
+            color: #929292;
+            font-size: 14px;
+        }
+
+        div.footer_dados{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="menu">
+            <br>
+            <h1>CEASAN</h1>
+            <h3>Clínica de Fisioterapia</h3>
+            <p>Diagnóstico, Tratamento e Recuperação</p>
+
+            <br><br><br><br>
+
+            <ul>
+                <li><a href="index.html">Página Principal</a></li>
+                <br><br>
+
+                <li><a href="sobre.html">Sobre a clínica</a></li>
+                <br><br>
+                
+                <li><a href="horario.html">Atendimento</a></li>
+                <br><br>
+                
+                <li><a href="contato.html">Entre em contato</a></li>
+                <br><br>
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="header"></div>
+
+            <div class="content">
+                <h2>Horários de funcionamento</h2>
+                <p>Os tratamentos disponibilizados pela clínica estão centrados no desenvolvimento biopsicossocial do paciente, sendo assim completamente viável para pessoas de <b>todas as idades</b>. A personalização de cada serviço apenas será realizada visando atingir o melhor resultado para o paciente, não importando sua condição inicial.</p>
+
+                <p>Considere as informações abaixo:</p>
+                
+                <br>
+
+                <table summary="Cronograma de funcionamento da Clínica CEASAN com serviços disponíveis, horário de funcionamento e preços de acordo com os dias da semana">
+                    <thead>
+                        <tr>
+                            <th>Serviços</th>
+                            <th>Segunda à Sexta</th>
+                            <th>Sábados</th>
+                            <th>Feriados</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td><b>Clínica Geral</b></td>
+                            <td style="text-align: center;">08h – 19h</td>
+                            <td style="text-align: center;">08h – 14h</td>
+                            <td style="text-align: center;">08h – 14h</td>
+                        </tr>
+
+                        <tr>
+                            <td><b>Realização de Exames</b></td>
+                            <td style="text-align: center;">08h – 19h</td>
+                            <td style="text-align: center; color: #1f1f1f;"><i>Indisponível</i></td>
+                            <td style="text-align: center;">08h – 14h</td>
+                        </tr>
+
+                        <tr>
+                            <td><b>Triagem e Avaliação</b></td>
+                            <td style="text-align: center;">08h – 19h</td>
+                            <td style="text-align: center;">08h – 14h</td>
+                            <td style="text-align: center; color: #929292;"><i>Indisponível</i></td>
+                        </tr>
+
+                        <tr>
+                            <td><b>Fisioterapia</b></td>
+                            <td style="text-align: center;">08h – 19h</td>
+                            <td style="text-align: center;">08h – 14h</td>
+                            <td style="text-align: center; color: #1f1f1f;"><i>Indisponível</i></td>
+                        </tr>
+
+                        <tr>
+                            <td><b>Acunputura</b></td>
+                            <td style="text-align: center;">08h – 15h</td>
+                            <td style="text-align: center; color: #929292;"><i>Indisponível</i></td>
+                            <td style="text-align: center; color: #929292;"><i>Indisponível</i></td>
+                        </tr>
+
+                        <tr>
+                            <td><b>Pilates</b></td>
+                            <td style="text-align: center;">10h – 18h</td>
+                            <td style="text-align: center;">10h – 14h</td>
+                            <td style="text-align: center; color: #1f1f1f;"><i>Indisponível</i></td>
+                        </tr>
+                    </tbody>
+
+                    <tfoot>
+                        <tr>
+                            <td>Valor, em <b>R$</b></td>
+                            <td style="text-align: center;"><b>R$220,00</td>
+                            <td style="text-align: center;"><b>R$</b>220,00</td>
+                            <td style="text-align: center;"><b>R$</b>184,70</td>
+                        </tr>
+                    </tfoot>
+                </table>
+
+                <br>
+
+                <h3>Não conseguiu encontrar o que procura?</h3>
+                <p>Se você possui qualquer dúvida em relação aos serviços, considere <a href="contato.html">entrar em contato</a>. Busque as orientações de um de nossos atendentes caso deseje qualquer esclarecimento quanto aos nossos processos, horários, ou caso deseje saber se atendemos seu <i>convênio</i>.</p>
+                
+                <p>Também aceitamos a negociação dos preços das consultas, com base em planos de pagamento que contém <u>anuidade</u>.</p>
+            </div>
+
+            <div class="footer">
+                <br>
+                <div class="footer_dados">
+                    <p style="font-weight: bold;">Centro de Atenção à Saúde Neuromuscular</p>
+                    <p style="width: 50%;">A clínica CEASAN é especializada em cuidado e recuperação de pacientes no que diz respeito às funções neuromusculares, cardiovasculares e respiratórias.</p>
+                    
+                    <ul>
+                        <li><a href="sobre.html">Sobre a clínica</a></li>
+                        <li><a href="contato.html">Entre em contato</a></li>
+                    </ul>
+                </div>
+
+                <hr><br>
+                
+                <p style="text-align: center;"><a href="#">Termos de Uso</a> | <a href="#">Política de Privacidade</a> | <a href="contato.html">Entre em contato</a></p>
+                <p style="text-align: center;">2024 &copy; Centro de Atenção à Saúde Neuromuscular, CEASAN</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

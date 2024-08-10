@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIO.me | Criando seu primeiro site completo: Desafio I</title>
+
+    <link rel="stylesheet" href="base.css">
+    <style>
+        div.header {
+            background-image: url(img/hands-holding-paper-people-close-up_freepik.jpg);
+            background-repeat: no-repeat;
+            background-size: 1300px;
+            background-position: 50% 40%;
+        }
+
+        .menu {
+            /* background-color: aqua; */
+
+            background-color: #197BBD;
+            width: 15%;
+            height: 1060px;
+            padding: 10px 20px 0px;
+        }
+
+        div.menu {
+            color: white;
+        }
+
+        div.menu li {
+            font-size: 18px;
+        }
+
+        .content {
+            background-color: white;
+            min-height: 650px;
+            padding: 20px;
+        }
+
+        div.content_endereco {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        div.content_endereco_dados {
+            width: fit-content;
+        }
+
+        div.content form {
+            width: 50%;
+        }
+
+        div.content form input,
+        div.content form select{
+            width: 80%;
+            font-size: 14px;
+        }
+
+        div.content form button {
+            width: 150px;
+            height: 50px;
+            font-size: 14px;
+            background-color: #197BBD;
+            color: white;
+            cursor: pointer;
+        }
+
+        div.content textarea {
+            resize: none;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+        }
+
+        div.footer {
+            color: #929292;
+            font-size: 14px;
+        }
+
+        div.footer_dados {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="menu">
+            <br>
+            <h1>CEASAN</h1>
+            <h3>Clínica de Fisioterapia</h3>
+            <p>Diagnóstico, Tratamento e Recuperação</p>
+
+            <br><br><br><br>
+
+            <ul>
+                <li><a href="index.html">Página Principal</a></li>
+                <br><br>
+
+                <li><a href="sobre.html">Sobre a clínica</a></li>
+                <br><br>
+
+                <li><a href="horario.html">Atendimento</a></li>
+                <br><br>
+
+                <li><a href="contato.html">Entre em contato</a></li>
+                <br><br>
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="header"></div>
+
+            <div class="content">
+                <h2>Entre em contato ainda hoje!</h2>
+                <p>Você tem alguma preocupação ou dúvida sobre os serviços de fisioterapia? Não hesite em ligar para
+                    (11) 3588-6217 ou preencher o formulário abaixo. Estaremos felizes em te responder.</p>
+
+                <br>
+
+                <div class="content_endereco">
+                    <div class="content_endereco_dados">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3685.857219561236!2d-48.559377823822345!3d-22.509539579536774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c745f5d76da769%3A0x95d6266b188ca1e7!2sR.%20Souza%20Aranha%2C%20376%2C%20Igara%C3%A7u%20do%20Tiet%C3%AA%20-%20SP%2C%2017350-000!5e0!3m2!1spt-BR!2sbr!4v1723224721502!5m2!1spt-BR!2sbr"
+                            width="500" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+
+                        <p>17350-000 | Rua Souza Aranha, 376</p>
+                        <p>Centro, Igaraçu do Tietê/SP</p>
+
+                        <br>
+
+                        <p><b><abbr title="Telefone">Tel.</abbr>:</b> (11) 3588-6217 | (11) 9 9885-4672</p>
+                        <p><i>contato@ceasan.com.br</i></p>
+                    </div>
+
+                    <form action="" method="GET" onsubmit="alert('Agradecemos seu contato! Responderemos em breve.')">
+                        <fieldset>
+                            <legend>Dados pessoais</legend>
+                            <label for="fNome" required>Nome:</label>
+                            <input type="text" name="conato_nome" id="fNome">
+
+                            <br><br>
+
+                            <label for="fEmail" required>E-mail:</label>
+                            <input type="email" name="contato_email" id="fEmail">
+                        </fieldset>
+
+                        <br>
+
+                        <fieldset>
+                            <legend>Mensagem</legend>
+                            <label for="fAssunto" required>Assunto:</label>
+                            <select name="contato_assunto" id="fAssunto">
+                                <option value="fDuvida">Dúvida</option>
+                                <option value="fReclamacao">Reclamação</option>
+                                <option value="fAgendamento">Agendamento</option>
+                                <option value="fNegociacao">Negociação</option>
+                            </select>
+
+                            <br><br>
+
+                            <label for="fMensagem">Especifique a razão do seu contato abaixo...</label>
+                            <br>
+                            <textarea name="contato_mensagem" id="fMensagem" cols="70" rows="10" maxlength="250"
+                                placeholder="Sua mensagem aqui..." required></textarea>
+                            <br><br>
+                        </fieldset>
+
+                        <br>
+                        <button type="submit" value="fSubmit">Enviar</button>
+                        <button type="reset" value="fReset">Limpar</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer">
+                <br>
+                <div class="footer_dados">
+                    <p style="font-weight: bold;">Centro de Atenção à Saúde Neuromuscular</p>
+                    <p style="width: 50%;">A clínica CEASAN é especializada em cuidado e recuperação de pacientes no que
+                        diz respeito às funções neuromusculares, cardiovasculares e respiratórias.</p>
+
+                    <ul>
+                        <li><a href="sobre.html">Sobre a clínica</a></li>
+                        <li><a href="contato.html">Entre em contato</a></li>
+                    </ul>
+                </div>
+
+                <hr><br>
+
+                <p style="text-align: center;"><a href="#">Termos de Uso</a> | <a href="#">Política de Privacidade</a> |
+                    <a href="contato.html">Entre em contato</a></p>
+                <p style="text-align: center;">2024 &copy; Centro de Atenção à Saúde Neuromuscular, CEASAN</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
