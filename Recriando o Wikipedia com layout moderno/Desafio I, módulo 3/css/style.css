@@ -104,9 +104,10 @@ div#article_mixed-media {
 
 figure {
     width: fit-content;
-    margin: 5px 0 15px 30px;
-    background-color: #f9f9fb;
+    margin: 15px 0 15px 30px;
     padding: 5px 5px 15px 5px;
+    
+    background-color: #f9f9fb;
     outline: 1px solid #cdcdcd;
 }
 
