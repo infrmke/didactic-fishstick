@@ -1,0 +1,158 @@
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 80px;
+    background-color: white;
+    border-bottom: solid 1px #cdcdcd;
+}
+
+header>* {
+    margin: 0 50px;
+}
+
+div#header_logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+div#header_logo>* {
+    margin-right: 10px;
+}
+
+main {
+    margin: 10px 0 40px;
+}
+
+main>article p {
+    color: #202122;
+}
+
+sup.citation {
+    color: #0066ff;
+}
+
+article>div h2 {
+    margin-top: 25px;
+    border-bottom: 1px solid #cdcdcd;
+}
+
+p#article_credits {
+    font-size: 14px;
+    padding-left: 10px;
+    border-left: 5px solid #cdcdcd;
+}
+
+p.paragraph_small,
+td.td_text-small {
+    font-size: 14px;
+}
+
+table {
+    /* border: 1px solid black; */
+
+    border-spacing: 10px;
+    border-collapse: separate;
+    width: 225px;
+}
+
+table th {
+    text-align: center;
+    padding: 10px;
+    background-color: #FF8600;
+}
+
+table th a {
+    color: #0041A3;
+}
+
+table td img {
+    width: 200px;
+}
+
+td.td_text-big {
+    font-size: 18px;
+}
+
+table tbody.table_text-center td {
+    text-align: center;
+}
+
+table tbody.table_text-right td~td {
+    text-align: right;
+}
+
+article#article_information>div figure,
+article#article_information>figure {
+    float: right;
+}
+
+article#article_information>div figure img,
+article#article_information>figure img {
+    width: 250px;
+}
+
+div#article_mixed-media {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    float: right;
+}
+
+figure {
+    width: fit-content;
+    margin: 5px 0 15px 30px;
+    background-color: #f9f9fb;
+    padding: 5px 5px 15px 5px;
+    outline: 1px solid #cdcdcd;
+}
+
+div.figure_copycat {
+    width: 250px;
+    margin: 5px 0 15px 30px;
+    background-color: #f9f9fb;
+    padding: 5px 5px 0 5px;
+    outline: 1px solid #cdcdcd;
+}
+
+audio {
+    width: 250px;
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: #FF8600;
+}
+
+div#article_references{
+    font-size: 14px;
+}
+
+div#article_references ol li{
+    padding: 2px;
+}
+
+section#article_terminal {
+    padding: 5px;
+    border: 1px solid #cdcdcd;
+    background-color: #f9f9fb;
+}
+
+section#article_terminal ul {
+    padding: 0;
+    list-style-type: none;
+    margin: 5px 2px;
+}
+
+section#article_terminal ul li {
+    display: inline;
+    margin: 0 2px;
+}
+
+section.sidebar_left div.anchors {
+    position: fixed;
+    top: 115px;
+    bottom: 200px;
+}

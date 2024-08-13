@@ -1,0 +1,126 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    
+    background-color: #f9f9fb;;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+    font-size: 1rem;
+}
+
+a {
+    /* color: blue; */
+    color: #0066ff;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.content {
+    /* grid-gap: 3rem; */
+    /* gap: 3rem; */
+    
+    /* max-width: 1440px; */
+    
+    display: grid;
+    gap: 4rem;
+    grid-template-areas: "sidebar main anchors";
+    grid-template-columns: minmax(0, 15rem) minmax(0, 2.5fr) minmax(0, 15rem);
+    
+    background-color: white;
+    margin-top: 2em;
+    padding: 0 3em;
+    border-top: solid 1px #cdcdcd;
+    border-bottom: solid 1px #cdcdcd;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 150px;
+    margin: 0 50px;
+}
+
+footer ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li{
+    display: inline;
+    padding-right: 10px;
+    font-size: 14px;
+}
+
+.footer_details {
+    /* border-top: solid 1px #cdcdcd; */
+    /* margin: 0 50px 10px; */
+    padding: 5px 0;
+    border-bottom: 1px solid #cdcdcd;
+}
+
+.footer_further-details{
+    width: 100%;
+    /* margin: 0 50px; */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.anchors ul{
+    margin: 5px 0;
+    list-style: none;
+    padding-left: 5px;
+}
+
+.anchors li{
+    margin: 5px 0;
+}
+
+.sidebar_right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    padding: 0 30px 0 5px;
+    border-right: solid 1px #cdcdcd;
+}
+
+.sidebar_left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    border-left: solid 1px #cdcdcd;
+}
+
+/* abaixo: NÃO UTILIZADOS ou ALTERADOS EM style.css */
+
+/* ul {
+    list-style: none;
+    padding-left: 5px;
+} */
+
+
+/* figure {
+    text-align: center;
+} */
+
+/* .bar {
+    background-color: #f9f9fb;
+    padding: 15px;
+    border-top: solid 1px #cdcdcd;
+    border-bottom: solid 1px #cdcdcd;
+} */
+
+/* .anchors {
+    border-left: solid 1px #cdcdcd;
+    padding-left: 15px;
+} */
