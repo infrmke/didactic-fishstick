@@ -8,11 +8,12 @@ html {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.5;
     font-size: 1rem;
-    text-align: justify;
+    text-align: left;
 }
 
 a {
     /* color: blue; */
+
     color: #0066ff;
     text-decoration: none;
 }
@@ -89,6 +90,16 @@ footer ul li{
 
 .anchors li{
     margin: 5px 0;
+}
+
+.anchors li a:hover{
+    color: black;
+}
+
+.sidebar_right h1,
+.sidebar_left h2{
+    font-size: 24px;
+    margin: 20px 0;
 }
 
 .sidebar_right {
