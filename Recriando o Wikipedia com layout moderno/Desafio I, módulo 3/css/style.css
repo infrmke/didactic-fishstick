@@ -90,11 +90,6 @@ article#article_information>figure {
     float: right;
 }
 
-article#article_information>div figure img,
-article#article_information>figure img {
-    width: 250px;
-}
-
 div#article_mixed-media {
     display: flex;
     flex-direction: column;
