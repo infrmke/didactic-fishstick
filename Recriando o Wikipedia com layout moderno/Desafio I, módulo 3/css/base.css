@@ -59,6 +59,11 @@ footer ul li{
     font-size: 14px;
 }
 
+.footer_details,
+.footer_further-details{
+    width: 1425px;
+}
+
 .footer_details {
     /* border-top: solid 1px #cdcdcd; */
     /* margin: 0 50px 10px; */
@@ -69,8 +74,6 @@ footer ul li{
 
 .footer_further-details{
     /* margin: 0 50px; */
-
-    width: 100%;
 
     display: flex;
     flex-direction: row;
