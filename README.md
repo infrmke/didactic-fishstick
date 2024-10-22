@@ -15,6 +15,7 @@ Finalizado pela primeira vez em 13 de agosto (2024), contém:
 - Estilização básica (CSS interno);
 - Nenhuma semântica;
 - Nenhum elemento ARIA;
+- Nenhum pré-processador CSS;
 - Zero responsividade.
 
 ## Recriando o Wikipédia com Layout Moderno
@@ -23,4 +24,5 @@ Finalizado pela primeira vez em 14 de agosto (2024), contém:
 - Estilização intermediária (CSS externo);
 - Semântica mais apropriada;
 - Alguns elementos ARIA;
+- Nenhum pré-processador CSS;
 - Zero responsividade.
